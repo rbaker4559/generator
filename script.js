@@ -31,6 +31,7 @@ function generateTutorialSections() {
     const main = document.querySelector('main');
     tutorials.forEach((tutorial, index) => {
         const tutorialSection = document.createElement('section');
+        tutorialSection.className = 'mx-auto mb-5'
         tutorialSection.id = `tutorial-${index}`;
         const title = document.createElement('h2');
         title.textContent = tutorial.title;
